@@ -2,7 +2,7 @@
 
 class Journey
 
-attr_reader :entry_station, :exit_station
+attr_reader :entry_station, :exit_station, :complete
 
 MIN_FARE = 1
 PENALTY_FARE = 6

@@ -22,6 +22,7 @@ class Oystercard
     raise MIN_ERROR if @balance < MIN_BALANCE
     deduct(@current_journey.fare) if @current_journey != nil
     @current_journey = Journey.new(station)
+    # @current_journey = journey.start(station)
   end
 
   def touch_out(station)
